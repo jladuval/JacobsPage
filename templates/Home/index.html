@@ -10,23 +10,29 @@
           <!-- Carousel item start -->
           <div class="carousel-inner">
             <div class="active item">
-              <img src="{{ STATIC_URL }}img/screen.png" class="showcase-img span6"
+              <img src="{{ STATIC_URL }}img/Logo.png" class="showcase-img span6"
               alt="Website" />
               <div class="span5">
                 <h2>Fluffy Link</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Nam sit amet diam ac felis condimentum
-                egestas. Vivamus egestas felis at quam interdum sed
-                vulputate nulla luctus. Duis placerat orci est. Lorem
-                ipsum dolor sit amet, consectetur adipiscing
-                elit. Quisque laoreet, nibh sed molestie interdum,
-                erat lectus sodales dolor, consequat blandit ipsum
-                diam non magna. Phasellus quis elit ut odio blandit
-                fringilla a vitae dolor. Morbi vulputate eros in
-                tortor laoreet pharetra. Fusce a congue odio.</p>
+                <p>Fluffy link was a project that went from conception to being live in under 48 hours.
+                    It was made as an alternative to tinyUrl for people who wanted shortened links
+                    (or even just nicer sounding links) to entice their friends visit other websites.
+                </p>
               </div>
             </div>
             <!-- Carousel item end -->
+              <div class="item">
+                  <img src="{{ STATIC_URL }}img/mvc4Image.png" class="showcase-img span6"
+                       alt="Website" />
+                  <div class="span5">
+                      <h2>MVC4 Template</h2>
+                      <p>MVC4 Template was a template project that I created after my experience making
+                          a very large, highly structured social media website. With an emphasis on large scale
+                          architecture and modular web services the MVC4 template should help any developer begin
+                           any large project the right way.
+                      </p>
+                  </div>
+              </div>
           </div>
           <!-- Carousel nav -->
           <a class="carousel-control left" href="#showcase" data-slide="prev">&lsaquo;</a>
@@ -42,38 +48,24 @@
         <img src="{{ STATIC_URL }}img/20120502_095130.jpg" class="span4" alt="Me" />
         <!-- Your description start -->
         <div class="span8">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit. Integer sit amet nisi nisl. Suspendisse faucibus mi ac
-          felis lobortis nec malesuada metus tempus. In hac habitasse
-          platea dictumst. Quisque a diam a ante ultrices aliquet eu
-          non dolor. Nullam purus ipsum, porta non ornare sit amet,
-          aliquam quis lacus. Donec dapibus, nisi vitae commodo
-          ultrices, ligula lacus posuere eros, id tincidunt nisi risus
-          nec neque. Nunc pellentesque fringilla tempor. Donec eu nibh
-          eget quam sodales aliquam. Curabitur neque neque, volutpat
-          id vulputate eu, euismod a leo. Phasellus aliquam laoreet
-          nibh at dignissim. Duis vel libero libero, viverra interdum
-          diam.</p>
-          <p>Curabitur id dignissim lacus. Morbi tristique, erat non
-          mollis feugiat, purus turpis aliquet odio, vitae pulvinar
-          nibh massa vel velit. Donec eleifend, felis quis euismod
-          lacinia, quam dui ultricies mi, ac consequat libero felis ac
-          dolor. Sed volutpat volutpat malesuada. Praesent et felis
-          neque, et aliquam turpis. Nullam massa tellus, viverra in
-          egestas nec, posuere id sapien. Aliquam erat
-          volutpat. Integer nec eros ipsum. Suspendisse ac felis nisl,
-          et tincidunt sapien. Ut tincidunt nulla aliquam nibh
-          tincidunt in placerat elit facilisis. Donec et massa diam,
-          vitae ultrices arcu. Aenean non tellus sed ipsum eleifend
-          porttitor. Donec elementum tempor urna, non posuere mauris
-          cursus et. Aliquam ac lectus augue, id suscipit
-          nunc. Vestibulum a nunc enim, vitae dictum lorem. Quisque
-          non sem orci, in bibendum arcu.</p>
+          <p>
+            I am a web developer from Christchurch, New Zealand. My experience is mainly with large scale, enterprise, web
+              applications and I always strive to provide my clients with a stable and maintanable system. My passion for web
+              development started shortly after I finished university and it has given me the drive to make the best applications
+              that I possibly can. The web industry moves very quickly and I believe it is important to stay ahead of the curve in both
+              front end technologies and back end coding.
+          </p>
+          <p>
+            I provide solutions ranging from personal home pages (much like this one) all the way up to enterprise and social media applications.
+             I believe that visibility and communication are the most important considerations when creating a website
+              and I try to make sure my clients are involved as much as possible. Feel free to contact me if you have any
+              questions regarding a solution for you or your business, or just any web developement questions in general.
+          </p>
         </div>
         <!-- Your description end -->
       </div>
       <!-- Portfolio section start -->
-      <div id="portfolio" class="row portfolio">
+      {% comment %}<div id="portfolio" class="row portfolio">
         <h1 class="page-header">My Work</h1>
         <div class="container">
           <!-- The portfolio is made of a slider that shows big visual
@@ -157,7 +149,7 @@
             </ul>
             <!-- Portfolio controls end -->
         </div>
-      </div>
+      </div>{% endcomment %}
     </div>
     <!-- Portfolio section end -->
     <!-- Contact section start -->
@@ -178,13 +170,6 @@
           Christchurch, Canterbury
         </address>
       </div>
-      <!-- Contact info card end -->
-      <!-- Map start NOTE: You can remove the map if you don't want to
-      use one and leave the contact-info small, or if you
-      want it to occupy the whole space add 'no-map' class to it. 
-      To embed your own map follow these instructions
-      http://support.google.com/maps/bin/answer.py?hl=en&answer=72644
-      and replace the code below with your own -->
       <iframe class="hidden-phone" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
         src="https://maps.google.co.nz/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=232+ilam+road&amp;aq=&amp;sll=-40.799894,175.310128&amp;sspn=58.660975,135.263672&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=232+Ilam+Rd,+Ilam,+Christchurch+8041,+Canterbury&amp;z=13&amp;iwloc=A&amp;output=embed"></iframe>
       <!-- Map end -->

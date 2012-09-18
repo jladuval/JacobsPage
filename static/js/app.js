@@ -1,6 +1,6 @@
 $(function() {
     $("#showcase").carousel();
-    $('#portfolio-slide').carousel({ interval: false });
+    $('#portfolio-slide').carousel({ interval: true });
     $('body').scrollspy({ offset: 0 })
 
     function scrollTo(element) {
